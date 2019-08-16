@@ -23,6 +23,6 @@ public class AopApplication {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AopConfig.class);
         MathCalculator bean = context.getBean(MathCalculator.class);
-        bean.divide(1, 0);
+        bean.divide(1, 1);
     }
 }
